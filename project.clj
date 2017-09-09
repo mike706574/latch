@@ -1,5 +1,5 @@
-(defproject org.clojars.mike706574/latch "0.1.0-SNAPSHOT"
-  :description "Describe me!"
+(defproject org.clojars.mike706574/latch "0.1.0"
+  :description "A project."
   :url "https://github.com/mike706574/latch"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -7,7 +7,6 @@
   :dependencies [[commons-codec "1.10"]]
   :profiles {:dev {:source-paths ["dev"]
                    :target-path "target/dev"
-                   :dependencies [[org.clojure/clojure "1.9.0-alpha19"]
-                                  [org.clojure/tools.namespace "0.2.11"]
-                                  [org.clojure/test.check "0.9.0"]]}}
+                   :dependencies [[org.clojure/clojure "1.9.0-alpha20"]
+                                  [org.clojure/tools.namespace "0.2.11"]]}}
   :repl-options {:init-ns user})
