@@ -1,4 +1,4 @@
-(defproject org.clojars.mike706574/latch "0.1.0"
+(defproject org.clojars.mike706574/latch "0.1.1-SNAPSHOT"
   :description "A project."
   :url "https://github.com/mike706574/latch"
   :license {:name "Eclipse Public License"
