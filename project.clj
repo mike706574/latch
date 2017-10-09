@@ -7,6 +7,6 @@
   :dependencies [[commons-codec "1.10"]]
   :profiles {:dev {:source-paths ["dev"]
                    :target-path "target/dev"
-                   :dependencies [[org.clojure/clojure "1.9.0-alpha20"]
+                   :dependencies [[org.clojure/clojure "1.9.0-beta2"]
                                   [org.clojure/tools.namespace "0.2.11"]]}}
   :repl-options {:init-ns user})

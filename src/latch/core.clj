@@ -15,7 +15,7 @@
      (throw (ex-info (str path " not found.") {:path path}))))
 
 (defn decrypted [path key]
-  (decrypt (read path) key))
+  (decrypt (encrypted path) key))
 
 (defn encrypted-password [] (encrypted "password.txt"))
 (defn encrypted-token [] (encrypted "token.txt"))
