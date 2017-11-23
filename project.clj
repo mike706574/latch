@@ -1,4 +1,4 @@
-(defproject fun.mike/latch "0.3.0-SNAPSHOT"
+(defproject fun.mike/latch "0.3.0"
   :description "A project."
   :url "https://github.com/mike706574/latch"
   :license {:name "Eclipse Public License"
