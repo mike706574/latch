@@ -4,9 +4,11 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :min-lein-version "2.0.0"
-  :dependencies [[commons-codec "1.10"]]
+  :dependencies [[commons-codec "1.11"]]
   :profiles {:dev {:source-paths ["dev"]
                    :target-path "target/dev"
-                   :dependencies [[org.clojure/clojure "1.9.0-beta2"]
+                   :dependencies [[org.clojure/clojure "1.9.0-RC1"]
                                   [org.clojure/tools.namespace "0.2.11"]]}}
+  :repositories [["releases" {:url "https://clojars.org/repo"
+                              :creds :gpg}]]
   :repl-options {:init-ns user})
