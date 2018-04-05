@@ -5,17 +5,17 @@
             [latch.crypto :as crypto]))
 
 (defn encrypt
-  "Encrypts text using key."
+  "Encrypts `text` using `key`."
   [text key]
   (crypto/encrypt text key))
 
 (defn decrypt
-  "Decrypts text using key."
+  "Decrypts `text` using `key`."
   [text key]
   (crypto/decrypt text key))
 
 (defn encrypted
-  "Retrieves the encrypted content from path on the classpath."
+  "Retrieves the encrypted content from `path` on the classpath."
   [path]
   (if-let [resource (io/resource path)]
      (-> resource
@@ -24,7 +24,7 @@
      (throw (ex-info (str path " not found.") {:path path}))))
 
 (defn decrypted
-  "Retrieves and decrypts the content from path on the classpath."
+  "Retrieves and decrypts the content from `path` on the classpath using `key`."
   [path key]
   (decrypt (encrypted path) key))
 
@@ -39,10 +39,10 @@
   (encrypted "token.txt"))
 
 (defn decrypted-password
-  "Decrypts the password from password.txt on the classpath using key."
+  "Decrypts the password from password.txt on the classpath using `key`."
   [key]
   (decrypt (encrypted-password) key))
 
 (defn decrypted-token
-  "Decrypts the token from token.txt on the classpath using key."
+  "Decrypts the token from token.txt on the classpath using `key`."
   [key] (decrypt (encrypted-token) key))
